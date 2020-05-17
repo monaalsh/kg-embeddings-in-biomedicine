@@ -1,12 +1,6 @@
 # kg-embeddings-in-biomedicine
 
-
-
-
-# kg-embeddings-in-biomedical-science
-
 ## Background
-
 
 ## Requirements
 
