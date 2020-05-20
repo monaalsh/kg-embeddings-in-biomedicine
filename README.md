@@ -82,9 +82,9 @@ I also design our experiments to determine how partial and free settings could a
 
 The knowledge graph is built using RDF graphs from combining several databases as shown in the table below along with the following bio-ontoogies:
 
-*Disease ontology [(DO)](https://disease-ontology.org/downloads/)
-*Gene function [(GO)](http://geneontology.org/docs/download-ontology/)
-*Human phenotype ontology [(HPO)](https://hpo.jax.org/app/download/ontology)
+* Disease ontology [(DO)](https://disease-ontology.org/downloads/)
+* Gene function [(GO)](http://geneontology.org/docs/download-ontology/)
+* Human phenotype ontology [(HPO)](https://hpo.jax.org/app/download/ontology)
 
 
 
