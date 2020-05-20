@@ -58,6 +58,9 @@ $$
 score(s,o) = d(s+p,o)
 $$
 
+![score(\textbf{s},\textbf{o}) = d(\textbf{s}+\textbf{p},\textbf{o})](https://render.githubusercontent.com/render/math?math=score(%5Ctextbf%7Bs%7D%2C%5Ctextbf%7Bo%7D)%20%3D%20d(%5Ctextbf%7Bs%7D%2B%5Ctextbf%7Bp%7D%2C%5Ctextbf%7Bo%7D))
+
+
 For RESCAL, we computed the scores as defined by the loss
 function as follows:
 
