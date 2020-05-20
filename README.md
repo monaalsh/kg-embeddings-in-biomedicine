@@ -31,7 +31,7 @@ this work
 
 * [Walking RDF & OWL](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860058/): Knowledge graph embedding method which combines bio-ontologies and Linked Data and generates features representations for prediction and analysis and prediction in the biomedicine domain. It is available [here](https://github.com/bio-ontology-research-group/walking-rdf-and-owl).
 
-## Experimental Settings:
+## Methods and experimental Settings:
 
 For training our models, the positive set consists of the true associations for each relation, while the negative set is constructed by sampling an equal number of negative associations from the pool of unknown associations. We strictly require the negative associations to be between entities of the same types, while the negative set is between the set of genes and diseases that are not associated. To maintain fair comparisons, we fixed the training and testing triples in all of our experiments across different methods. For each tested entity, we applied the model by fixing the first part, which corresponds to the subject and enumerating all of the objects of the same entity type. We sorted the models’ scores in descending order to obtain the rank of the correct object and reported the mean of all ranks in the test triples. We trained each method as feature generation and endto-end models:
 
@@ -68,7 +68,7 @@ While in the Poincare method, they defined the distance in the hyperbolic space 
 ![score(\textbf{s},\textbf{o}) = arcosh\Big(1 + 2\frac{||\textbf{s} - \textbf{o}||^2}{(1-||\textbf{s}||)^2(1-||\textbf{o}||)^2}\Big)](https://render.githubusercontent.com/render/math?math=score(%5Ctextbf%7Bs%7D%2C%5Ctextbf%7Bo%7D)%20%3D%20arcosh%5CBig(1%20%2B%202%5Cfrac%7B%7C%7C%5Ctextbf%7Bs%7D%20-%20%5Ctextbf%7Bo%7D%7C%7C%5E2%7D%7B(1-%7C%7C%5Ctextbf%7Bs%7D%7C%7C)%5E2(1-%7C%7C%5Ctextbf%7Bo%7D%7C%7C)%5E2%7D%5CBig))
 
 
-Where $arcosh$ is the inverse hyperbolic cosine and $||.||$ is the $L2-norm$.
+Where ![arcosh](https://render.githubusercontent.com/render/math?math=arcosh) is the inverse hyperbolic cosine and $||.||$ is the $L2-norm$.
 
 We also design our experiments to determine how partial and free settings could affect the results of the study.
 
