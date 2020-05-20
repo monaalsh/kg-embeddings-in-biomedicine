@@ -25,17 +25,17 @@ We presents a comparative assessment and a standard benchmark for knowledge grap
 ## Methods
 The following knowledge graph embeddings methods have been evaluated in 
 this work
-*[TransE] (https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf): One of the Ill-known and state-of-the-art knowledge graph embeddings methods, it represents two entities and relations as vectors and measures the distance between the two entities after the relation vector transilation is applied. Efficient and fast implementation of TransE and its extensions are available at [OpenKE] (https://github.com/thunlp/OpenKE) and [KB2E] (https://github.com/thunlp/KB2E).
+* [TransE] (https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf): One of the Ill-known and state-of-the-art knowledge graph embeddings methods, it represents two entities and relations as vectors and measures the distance between the two entities after the relation vector transilation is applied. Efficient and fast implementation of TransE and its extensions are available at [OpenKE] (https://github.com/thunlp/OpenKE) and [KB2E] (https://github.com/thunlp/KB2E).
 
-*[Poincare embeddings] (https://arxiv.org/pdf/1705.08039.pdf): A graph embeddings method, specifically designed to account for taxonomies and hierarchical structure, which commonly available in knowledge graphs. [Gensim] (https://radimrehurek.com/gensim/models/poincare.html) provides an efficient implementation.  
+* [Poincare embeddings] (https://arxiv.org/pdf/1705.08039.pdf): A graph embeddings method, specifically designed to account for taxonomies and hierarchical structure, which commonly available in knowledge graphs. [Gensim] (https://radimrehurek.com/gensim/models/poincare.html) provides an efficient implementation.  
 
-*[Walking RDF & OWL] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860058/): Knowledge graph embedding method which combines bio-ontologies and Linked Data and generates features representations for prediction and analysis and prediction in the biomedicine domain. It is available [here] (https://github.com/bio-ontology-research-group/walking-rdf-and-owl).
+* [Walking RDF & OWL] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860058/): Knowledge graph embedding method which combines bio-ontologies and Linked Data and generates features representations for prediction and analysis and prediction in the biomedicine domain. It is available [here] (https://github.com/bio-ontology-research-group/walking-rdf-and-owl).
 
 ## Experimental Settings:
 
 For training our models, the positive set consists of the true associations for each relation, while the negative set is constructed by sampling an equal number of negative associations from the pool of unknown associations. We strictly require the negative associations to be between entities of the same types, while the negative set is between the set of genes and diseases that are not associated. To maintain fair comparisons, I fixed the training and testing triples in all of our experiments across different methods. For each tested entity, I applied the model by fixing the first part, which corresponds to the subject and enumerating all of the objects of the same entity type. I sorted the models’ scores in descending order to obtain the rank of the correct object and reported the mean of all ranks in the test triples. We trained each method as feature generation and endto-end models:
 
-**Features generators models**: in this mode, we employ a two-stage pipeline, which consists of treating knowledge
+** Features generators models**: in this mode, we employ a two-stage pipeline, which consists of treating knowledge
 graphs as feature generators folloId by a link prediction
 model). The aim is to assess how well the generated features
 predict biological relations. Briefly, we selected neural
@@ -44,7 +44,7 @@ to learn non-linear functions and reveal intricate graph patterns
 encoded in pairs of feature vectors. we then used
 the neural model scores produced by the sigmoid function
 in the last layer to predict the object entity in the test triple.
-**End-to-end models**: this corresponds to the native mode in
+** End-to-end models**: this corresponds to the native mode in
 which knowledge graph embedding methods are trained.
 I trained each method and applied the model on the test
 triples. Briefly, I use the learned feature vectors or matrices
