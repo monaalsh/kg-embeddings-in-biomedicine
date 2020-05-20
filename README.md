@@ -49,7 +49,7 @@ which knowledge graph embedding methods are trained.
 We trained each method and applied the model on the test
 triples. Briefly, we use the learned feature vectors or matrices
 (i.e., in case of RESCAL) to compute the scoring functions.
-For example, in TransE, we compute the $L1-norm$ defined
+For example, in TransE, we compute the ![L1-norm](https://render.githubusercontent.com/render/math?math=L1-norm) defined
 below and compare the scores of each subject in the test
 triples to all of the objects (which excludes the object entities
 in the training set):
@@ -68,7 +68,7 @@ While in the Poincare method, they defined the distance in the hyperbolic space 
 ![score(\textbf{s},\textbf{o}) = arcosh\Big(1 + 2\frac{||\textbf{s} - \textbf{o}||^2}{(1-||\textbf{s}||)^2(1-||\textbf{o}||)^2}\Big)](https://render.githubusercontent.com/render/math?math=score(%5Ctextbf%7Bs%7D%2C%5Ctextbf%7Bo%7D)%20%3D%20arcosh%5CBig(1%20%2B%202%5Cfrac%7B%7C%7C%5Ctextbf%7Bs%7D%20-%20%5Ctextbf%7Bo%7D%7C%7C%5E2%7D%7B(1-%7C%7C%5Ctextbf%7Bs%7D%7C%7C)%5E2(1-%7C%7C%5Ctextbf%7Bo%7D%7C%7C)%5E2%7D%5CBig))
 
 
-Where ![arcosh](https://render.githubusercontent.com/render/math?math=arcosh) is the inverse hyperbolic cosine and $||.||$ is the $L2-norm$.
+Where ![arcosh](https://render.githubusercontent.com/render/math?math=arcosh) is the inverse hyperbolic cosine and ![||.||](https://render.githubusercontent.com/render/math?math=%7C%7C.%7C%7C) is the ![L2-norm](https://render.githubusercontent.com/render/math?math=L2-norm).
 
 We also design our experiments to determine how partial and free settings could affect the results of the study.
 
