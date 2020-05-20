@@ -65,9 +65,9 @@ function as follows:
 
 While in the Poincare method, they defined the distance in the hyperbolic space as follows:
 
-$$
-score(s,o) = arcosh\Big(1 + 2\frac{||s - o||^2}{(1-||s||)^2(1-||o||)^2}\Big)
-$$
+![score(\vec{s},\vec{o}) = arcosh\Big(1 + 2\frac{||\vec{s} - \vec{o}||^2}{(1-||\vec{s}||)^2(1-||\vec{o}||)^2}\Big)](https://render.githubusercontent.com/render/math?math=score(%5Cvec%7Bs%7D%2C%5Cvec%7Bo%7D)%20%3D%20arcosh%5CBig(1%20%2B%202%5Cfrac%7B%7C%7C%5Cvec%7Bs%7D%20-%20%5Cvec%7Bo%7D%7C%7C%5E2%7D%7B(1-%7C%7C%5Cvec%7Bs%7D%7C%7C)%5E2(1-%7C%7C%5Cvec%7Bo%7D%7C%7C)%5E2%7D%5CBig))
+
+
 
 Where $arcosh$ is the inverse hyperbolic cosine and $||.||$ is the $L2-norm$.
 
