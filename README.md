@@ -98,6 +98,5 @@ The knowledge graph is built using RDF graphs from combining several databases a
 
 The data was normalized and we mapped all database identifiers to their ontology identifiers as described in [Alshahrani et al](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5860058/)
 
-
 ## Data and Embeddings
-All the knowledge graph data and embeddings related to this study are available [here](http://bio2vec.net/data/kg_embeddings/)
+All the knowledge graph data and embeddings related to this study are available [here](https://www.dropbox.com/sh/ux6omlvv2f1t10e/AAAIBRWDGmlZYIpsU5lMbNHEa?dl=0)
