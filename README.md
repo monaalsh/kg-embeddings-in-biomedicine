@@ -100,3 +100,7 @@ The data was normalized and we mapped all database identifiers to their ontology
 
 ## Data and Embeddings
 All the knowledge graph data and embeddings related to this study are available [here](https://www.dropbox.com/sh/ux6omlvv2f1t10e/AAAIBRWDGmlZYIpsU5lMbNHEa?dl=0)
+
+## Citation 
+Please cite our [paper](https://peerj.com/articles/cs-341/) if you find this work useful.
+
